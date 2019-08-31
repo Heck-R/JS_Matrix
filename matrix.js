@@ -161,6 +161,15 @@ class Matrix {
 
     /**
      * 
+     * Same as "new Matrix(this)"
+     * 
+     */
+    get copy(){
+        return new Matrix(this);
+    }
+
+    /**
+     * 
      * Returns it's size as an object
      * It's y property is the number of rows and the x is the number of columns this matrix has
      * 
